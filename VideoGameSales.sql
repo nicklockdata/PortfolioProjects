@@ -1,6 +1,6 @@
 #I found a dataset on video game sales on Kaggle. I was interested so I thought I'd dive into it. I acted as my own
-higher up and asked myself questions about things I would want to know. I found some good insights on which genre
-is the most lucrative and which games are the most popular in each region. I comment all of my insights below.
+#higher up and asked myself questions about things I would want to know. I found some good insights on which genre
+#is the most lucrative and which games are the most popular in each region. I comment all of my insights below.
 
 Legend:
 ### - Question
