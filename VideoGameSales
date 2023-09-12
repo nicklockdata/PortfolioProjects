@@ -1,9 +1,22 @@
+#I found a dataset on video game sales on Kaggle. I was interested so I thought I'd dive into it. I acted as my own
+higher up and asked myself questions about things I would want to know. I found some good insights on which genre
+is the most lucrative and which games are the most popular in each region. I comment all of my insights below.
+
+Legend:
+### - Question
+## - Insights
+# - Breaking the fourth wall comments
 
 ------------------------------------------------------------------------------------------------------------------------
 #Getting basic idea of this data using this query
 SELECT *
 FROM `video_game_sales.sales_data`
 ORDER BY Rank ASC
+
+#I have been really liking this game about space exploration so I thought I'd look it up quick!
+SELECT *
+FROM `video_game_sales.sales_data`
+WHERE Name = "No Man's Sky"
 
 Question #1
 ------------------------------------------------------------------------------------------------------------------------
@@ -31,7 +44,8 @@ ORDER BY Name
 
 Question #3
 ------------------------------------------------------------------------------------------------------------------------
-###If I wanted to make a video game what are the most popular genres and which have made the most money.
+###If I wanted to make a video game what are the most popular genres and which have made the most money. I will need
+a suggestion based off of your findings.
 SELECT DISTINCT Genre, COUNT(Genre) AS Genre_Releases, SUM(Global_Sales) as Global_Sales_Millions
 FROM `video_game_sales.sales_data`
 GROUP BY Genre
@@ -57,13 +71,6 @@ WHERE Platform = "PS2"
 
 SELECT COUNT(Platform) AS each
 FROM `video_game_sales.sales_data`
-
-
-##I have been really liking this game about space exploration so I thought I'd look it up quick!
-SELECT *
-FROM `video_game_sales.sales_data`
-WHERE Name = "No Man's Sky"
-
 
 Question #4
 ------------------------------------------------------------------------------------------------------------------------
