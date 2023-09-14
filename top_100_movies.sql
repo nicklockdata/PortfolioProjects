@@ -86,7 +86,7 @@ FROM `movies.top_100_movies`
 
 ## AVG and DISTINCT
 ------------------------------------------------------------------------------------------------------------------------
-#Finding average of whichever year you want
+##Finding average of whichever year you want
 SELECT Year, AVG(Profit) AS average_profit_2011 #Switch year at end of AS
 FROM `movies.top_100_movies`
 WHERE Year = 2011 #Switch year here as well
